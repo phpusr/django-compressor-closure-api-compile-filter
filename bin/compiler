@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+import os
+
+import sys
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+
+from compiler import minify
+
+
+def main(argv):
+    """Read each argument as file if exits. Or else read stdin. And write to stdout"""
+    js_code = ''
+
+    if argv:
+        for file_path in argv:
+            with open(file_path) as file:
+                js_code += file.read()
+    elif sys.stdin:
+        for line in sys.stdin:
+            js_code += line
+
+    print(minify(js_code))
+
+
+if __name__ == '__main__':
+    main(sys.argv[1:])
