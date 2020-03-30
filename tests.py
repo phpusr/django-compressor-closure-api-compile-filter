@@ -1,6 +1,6 @@
 import unittest
 
-import compiler
+from django_compressor_closure_api_compile_filter import compiler
 
 ERROR_JS_CODE = '''
 fun hello() {
