@@ -1,7 +1,7 @@
 Django Compressor Closure API Compile Filter
 ============================================
 
-Closure API filter for [Django Compressor](https://github.com/django-compressor/django-compressor)
+Closure API Compile Filter for [Django Compressor](https://github.com/django-compressor/django-compressor)
 
 ### Docs
 
