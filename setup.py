@@ -7,7 +7,7 @@ with open('README.md') as f:
 
 setuptools.setup(
     name='django-compressor-closure-api-compile-filter',
-    version='0.0.1',
+    version='0.1',
     author='phpusr',
     author_email='phpusr@gmail.com',
     description='Django Compressor Closure API Compile Filter',
