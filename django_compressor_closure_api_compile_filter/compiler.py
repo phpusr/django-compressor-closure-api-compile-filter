@@ -30,3 +30,7 @@ def minify(text):
     response = requests.post(URL, data).json()
 
     return response['compiledCode']
+
+
+def join(text):
+    return text
